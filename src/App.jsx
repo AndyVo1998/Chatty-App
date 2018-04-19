@@ -36,22 +36,15 @@ class App extends Component {
   }
 
     onNewMessage(username, content) {
-      let url = content.match(/(http)?s?:?(\/\/[^“’]*\.(?:png|jpg|jpeg|gif|png|svg))/g)
-      // let indexof = content.indexOf(url)
-      // let endIndex = indexof + url.length;
-      // content.slice(indexof, endIndex);
-      content = content.split(url)
-
+      let url = content.match(/(http)?s?:?(\/\/[^“’]*\.(?:png|jpg|jpeg|gif|png|svg))/g);
+      content = content.split(url);
       this.state.currentUser.name = username;
       const newMessage = {type: 'postmsg', username: this.state.currentUser.name, content: content, image: url};
-      // if (url) {
-      //   newMessage.image = url;
-      // }
       this.ws.send(JSON.stringify(newMessage));
   }
 
     onNewCurrent(username) {
-      let oldUser = this.state.currentUser.name
+      let oldUser = this.state.currentUser.name;
       this.state.currentUser.name = username;
       const newMessage = {type: 'postnotif', username, oldUser};
       this.ws.send(JSON.stringify(newMessage));
