@@ -1,6 +1,6 @@
 
     body {
-      background: white;
+      background: #F2F0F0;
       color: black;
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
@@ -8,7 +8,7 @@
     }
 
     .chatbar {
-      background: tomato;
+      background: #839DA6;
       border-top: 1px solid black;
       bottom: 0;
       display: flex;
@@ -43,7 +43,8 @@
 
     .message.system {
       font-style: italic;
-      padding: 5px 20px;
+      padding: 22px 20px;
+      float: right;
     }
 
     .message-content,
@@ -63,7 +64,7 @@
     }
 
     .navbar {
-      background: tomato;
+      background: #839DA6;
       border-bottom: 1px solid black;
       height: 60px;
       left: 0;
@@ -83,4 +84,9 @@
       line-height: 60px;
       padding: 0 10px;
       text-decoration: none;
+    }
+
+    .image {
+      width: 60%;
+      height: 60%;
     }
