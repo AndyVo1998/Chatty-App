@@ -16,7 +16,7 @@ class App extends Component {
   componentDidMount() {
     this.ws = new WebSocket('ws://localhost:3001/');
     if(this.ws) {
-      console.log("Conntected to Server")
+      console.log('Conntected to Server')
     }
     this.ws.addEventListener('message', event => {
       const messageObj = JSON.parse(event.data);

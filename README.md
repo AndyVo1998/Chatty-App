@@ -1,45 +1,29 @@
-React Boilerplate
-=====================
+# Decider
 
-A minimal and light dev environment for ReactJS.
+Welcome to Decider.  Decider is a web app that utilizes Node, Express, EJS, Postgresql, SASS, AJAX, Twilio, Mailgun, and Awesome-Phone Number. The app allows users to create a poll, share it with their friends, and view the results of their friend's votes.  App is deployed to heroku at <https://decider2000.herokuapp.com/>, <https://decider-supreme.herokuapp.com/>, and <https://ultimatedecider.herokuapp.com/>
 
-### Usage
+## Getting Started
 
-Clone the boilerplate and create your own git repo.
+1. Fork this repository, then clone your fork of this repository.
+2. Install dependencies using the `npm install` command.
+3. Start the web server using the `npm start` command. The app will be served at <http://localhost:3000/>.
+4. Go to <http://localhost:3000/> in your browser.
 
-```
-git clone git@github.com:lighthouse-labs/react-simple-boilerplate.git
-cd react-simple-boilerplate
-git remote rm origin
-git remote add origin [YOUR NEW REPOSITORY]
-# Manually update your package.json file
-```
+## Dependencies
 
-Install the dependencies and start the server.
+- awesome-phonenumber
+- body-parser
+- bootstrap
+- dotenv
+- ejs
+- express
+- knex
+- knex-logger
+- mailgun-js
+- morgan
+- node-sass
+- node-sass-middleware
+- pg
+- twilio
 
-```
-npm install
-npm start
-open http://localhost:3000
-```
-
-### Static Files
-
-You can store static files like images, fonts, etc in the `build` folder.
-
-For example, if you copy a file called my_image.png into the build folder you can access it using `http://localhost:3000/build/my_image.png`.
-
-### Linting
-
-This boilerplate project includes React ESLint configuration.
-
-```
-npm run lint
-```
-
-### Dependencies
-
-* React
-* Webpack
-* [babel-loader](https://github.com/babel/babel-loader)
-* [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+## Final prdouct
