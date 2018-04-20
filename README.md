@@ -38,3 +38,5 @@ Server Side
   - start
 
 ## Final prdouct
+
+!["Screenshot of chatty messages with image"] (https://github.com/AndyVo1998/Chatty-App/blob/master/docs/ChatRoomWithImage.png?raw=true)
